@@ -1,0 +1,30 @@
+
+.fluid-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    gap: 1rem;
+}
+.container {
+	display: grid;
+	grid-template-columns: [col1] 33% [col2] 33% [col3] 33%;
+	grid-gap: 10px;
+	grid-template-rows: [row1] 47% [row2] 47%;
+	text-align: center;
+	color: var(--card-foreground);
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	max-width: 80%;
+}
+
+.grid-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}

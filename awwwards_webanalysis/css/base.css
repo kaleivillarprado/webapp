@@ -71,6 +71,15 @@ article {
     border-radius: 10px;
     color: var(--destructive);
 }
+head {
+    font-size: 55px;
+    background-color: var(--card-foreground);
+    color: var(--foreground);
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
 
 blockquote {
     background-color: var(--background);
@@ -91,15 +100,9 @@ p {
     line-height: 1.8;
 }
 
+
 .highlight {
     color: var(--foreground);
-}
-
-.header-container h1 {
-    font-size: 2.5em;
-    color: var(--destructive);
-    margin: 0;
-    padding-bottom: 20px;
 }
 
 .image-container {
@@ -114,6 +117,13 @@ p {
     height: auto;
 }
 
+screen-heading {
+    margin-bottom: 40px;
+    background-color: var(--foreground);
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: var(--card-foreground);
+}
 .toc {
     text-align: center;
     margin: 20px 0;
