@@ -7,10 +7,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     min-height: 100vh;
     background-color: var(--background);
-    color: var(--foreground);
+    color: var(--card-foreground);
     display: flex;
     flex-direction: column; /* Arrange items in a column */
     justify-content: center;
@@ -31,8 +31,8 @@ main {
 
 header,
 footer {
-    background-color: var(--secondary);
-    color: var(--secondary-foreground);
+    background-color: var(--background);
+    color: var(--card-foreground);
     padding: 20px;
     gap: 10px;
     width: 100%; /* Make the header and footer take full width */
@@ -41,12 +41,12 @@ footer {
 header {
     margin-bottom: 30px;
     padding: 20px 40px;
-    background-color: var(--secondary);
+    background-color: var(--background);
 }
 
 header div,
 footer div {
-    background-color: var(--primary);
+    background-color: var(--background);
     padding: 10px;
     text-align: center;
     display: block;
@@ -57,24 +57,24 @@ h1,
 h2,
 h3,
 h4 {
-    color: var(--destructive);
+    color: var(--card-foreground);
 }
 
 a {
-    color: var(--muted-foreground);
+    color: var(--background);
 }
 
 article {
     margin-bottom: 40px;
-    background-color: var(--accent);
+    background-color: var(--foreground);
     padding: 20px 40px;
     border-radius: 10px;
     color: var(--destructive);
 }
 
 blockquote {
-    background-color: var(--foreground);
-    border-left: 10px solid var(--muted);
+    background-color: var(--background);
+    border-left: 10px solid var(--popover);
     margin: 20px 0;
     padding: 10px 20px;
 }
@@ -92,7 +92,7 @@ p {
 }
 
 .highlight {
-    color: var(--primary);
+    color: var(--foreground);
 }
 
 .header-container h1 {
