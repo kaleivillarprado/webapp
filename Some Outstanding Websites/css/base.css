@@ -7,14 +7,14 @@
 }
 
 body {
-    font-family: "Space Grotesk", sans-serif;
-    min-height: 100vh;
-    background-color: var(--background);
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-family: 'Graphik-Regular', sans-serif;
     color: var(--card-foreground);
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    overscroll-behavior: none;
+    background-color: var(--background);
 }
 
 
@@ -35,14 +35,24 @@ footer {
     color: var(--card-foreground);
     padding: 20px;
     gap: 10px;
-    width: 100%; /* Make the header and footer take full width */
+    width: 100%; 
 }
 
 header {
-    margin-bottom: 30px;
-    padding: 20px 40px;
-    background-color: var(--background);
+        margin: 0%;
+        padding: 20px;
+        border: 0%;
+        outline: 0;
+        font-size: 100%;
+        background-color: var(--background);
+        line-height: 22px;
+        letter-spacing: 1px;
+        line-break: 8%;
+        position: sticky;
+        top: 0;
+    
 }
+
 
 header div,
 footer div {
@@ -53,32 +63,33 @@ footer div {
 }
 
 
-h1,
-h2,
+h1{
+    font-size: 75px;
+    margin: 20px 0;
+}
+h2{
+    font-size: 55px;
+    line-break: 8%;
+    margin: 20px 0;
+}
 h3,
 h4 {
     color: var(--card-foreground);
 }
 
 a {
-    color: var(--background);
+    color: var(--popover-foreground);
 }
 
 article {
     margin-bottom: 40px;
+    margin: 40px;
     background-color: var(--foreground);
-    padding: 20px 40px;
-    border-radius: 10px;
+    padding: 40px 40px;
+    border-radius: 40px;
     color: var(--destructive);
-}
-head {
-    font-size: 55px;
-    background-color: var(--card-foreground);
-    color: var(--foreground);
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 20px 40px;
-    border-radius: 10px;
+
+
 }
 
 blockquote {
@@ -86,23 +97,33 @@ blockquote {
     border-left: 10px solid var(--popover);
     margin: 20px 0;
     padding: 10px 20px;
+    border-radius: 20px;
 }
 
 cite {
     display: block;
     margin-top: 10px;
     font-size: 0.9em;
-    color: var(--primary);
+    color: var(--PO);
 }
 
 p {
     margin: 15px 0;
-    line-height: 1.8;
+    line-height: 1;
 }
-
 
 .highlight {
     color: var(--foreground);
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+    background-color: var(--background);
+    color: var(--card-foreground);
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    
 }
 
 .image-container {
@@ -117,13 +138,6 @@ p {
     height: auto;
 }
 
-screen-heading {
-    margin-bottom: 40px;
-    background-color: var(--foreground);
-    padding: 20px 40px;
-    border-radius: 10px;
-    color: var(--card-foreground);
-}
 .toc {
     text-align: center;
     margin: 20px 0;
