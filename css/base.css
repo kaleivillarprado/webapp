@@ -91,6 +91,17 @@ article {
 
 
 }
+.article-two {
+    margin-bottom: 40px;
+    margin: 40px;
+    background-color: var(--foreground);
+    padding: 40px 40px;
+    border-radius: 40px;
+    color: var(--background);
+    text-align: center;
+
+
+}
 
 blockquote {
     background-color: var(--background);
@@ -99,6 +110,9 @@ blockquote {
     padding: 10px 20px;
     border-radius: 20px;
 }
+
+
+
 
 cite {
     display: block;

@@ -2,6 +2,7 @@
     /* Custom color palette */
     --background: hsl(266, 80%, 10%); /* #323B42 */
     --foreground: #C44900; /* #FCFBF9 */
+    --background-practicas: hsl(0, 96%, 47%); /* #323B42 */
 
     --card: #FFC53A; /* #D9C7BE */
     --card-foreground: #e8f0ff; /* #323B42 */
