@@ -1,0 +1,47 @@
+
+{
+    "name": "web_application",
+    "short_name": "web_app",
+    "description": "A brief description of your web application.",
+    "start_url": "/index.html",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "Assets/Favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "Assets/Favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+
+        },
+        {
+            "src": "Assets/Favicons/apple-touch-icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "Assets/Favicons/favicon-16x16.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+
+        {
+            "src": "Assets/Favicons/favicon-32x32.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "dir": "ltr",
+    "lang": "en"
+}

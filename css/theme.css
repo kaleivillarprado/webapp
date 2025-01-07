@@ -1,75 +1,32 @@
 :root {
-    /* Custom color palette */
-    --background: hsl(266, 80%, 10%); /* #323B42 */
-    --foreground: #C44900; /* #FCFBF9 */
-    --background-practicas: hsl(0, 96%, 47%); /* #323B42 */
-
-    --card: #FFC53A; /* #D9C7BE */
+    --background: #17052e; 
+    --foreground: #C44900;
     --card-foreground: #e8f0ff; /* #323B42 */
 
     --popover:#826AED; /* #323B42 */
     --popover-foreground: #fa7b32; /* #323B42 */
 
-    --primary: hsl(266, 80%, 10%); /* #323B42 */
-    --primary-foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
+   
+}
 
-    --secondary:  hsl(266, 80%, 10%); /* #323B42 */
-    --secondary-foreground: rgb(239, 231, 247); /* #323B42 */
+/* Light Mode */
+.light,
+:root[class~='light'] {
 
-    --muted: hsla(24, 6%, 48%, 1); /* #8C817B */
-    --muted-foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
+	--background:#e8f0ff; 
+	--foreground: #17052e;
+	--card-foreground: #fa7b32;
 
-    --accent: hsla(28, 12%, 68%, 1); /* #B5A79F */
-    --accent-foreground: hsla(16, 5%, 39%, 1); /* #635B58 */
+	--popover:#826AED;
+	--popover-foreground:#C44900;
 
-    --destructive: rgb(255, 249, 248); /* #3B3634 */
-    --destructive-foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
-
-    --border: hsla(28, 13%, 61%, 1); /* #A59B95 */
-    --input: hsla(28, 12%, 68%, 1); /* #B5A79F */
-    --ring: hsla(209, 12%, 22%, 1); /* #323B42 */
-
-
-    /* Combinations */
-    .card {
-        background-color: var(--card);
-        color: var(--card-foreground);
-    }
-
-    .popover {
-        background-color: var(--popover);
-        color: var(--popover-foreground);
-    }
-
-
-
-
-
-
-
+    #theme-toggle:checked{
+        --toggle-shape: '\25D1'; 
+        --background: #17052e;
+        --foreground: #C44900;
+        --card-foreground: #f#e8f0ff;
     
-    .primary {
-        background-color: var(--background);
-        color: var(--foreground);
-    }
-
-    .secondary {
-        background-color: var(--background);
-        color: var(--foreground);
-    }
-
-    .muted {
-        background-color: var(--muted);
-        color: var(--foreground);
-    }
-
-    .accent {
-        background-color: var(--accent);
-        color: var(--foreground);
-    }
-
-    .destructive {
-        background-color: var(--background);
-        color: var(--foreground);
+        --popover:#826AED; 
+        --popover-foreground: #fa7b32;
     }
 }

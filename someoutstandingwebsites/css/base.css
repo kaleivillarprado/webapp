@@ -1,64 +1,52 @@
 /* Basic reset for consistent margins and paddings */
            
 a {
-    color: var(--card-foreground);
+    color: var(--popover-foreground);
 }
 
 article {
-    display: block;
-    margin: 30px;
+    display: flex;
+    margin: 40px;
     background-color: var(--foreground);
     padding: 40px 40px;
     border-radius: 40px;
     color: var(--destructive);
     align-items: center;
-    width:auto;
-    max-height: 50%;
+    width: 33.3%;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    text-size-adjust:auto;
     text-align: left;
+    align-content: center;
 
 
 }
-popover-article{
-    display:grid;
-    margin: auto;
-    background-color: var(--popover);
+.article-two {
+    margin-bottom: 40px;
+    margin: 40px;
+    background-color: var(--foreground);
     padding: 40px 40px;
-    border-radius: 160px;
-    color: var(--card-foreground);
-    align-items: center;
-    width:50%;
-    max-height: 50%;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    color: var(--background);
     text-align: center;
 
 
-
 }
+
+
     
 blockquote {
     background-color: var(--background);
     border-left: 10px solid var(--popover);
     margin: 20px 0;
-    padding: 10px 10px;
+    padding: 10px 20px;
     border-radius: 20px;
-
 }
 
 body {
     font-family:'Helvetica';
     overscroll-behavior: smooth;
-    background-color: var(--background);
+    background-image: ("https://ik.imagekit.io/fffxdffn7/9.jpg");
     background-size: cover;
-    width: 100%;
-    margin: 0;
-    
-}
-
-.body-about {
-    font-family:'Helvetica';
-    overflow: clip;
-   background-color: transparent;
     width: 100%;
     margin: 0;
     
@@ -70,7 +58,7 @@ button-mid {
     margin: 40px;
     background-color: var(--foreground);
     padding: 20px 20px;
-    border-radius: 80px;
+    border-radius: 40px;
     color: var(--card-foreground);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     width:25%;
@@ -82,7 +70,7 @@ button-left {
     margin: 40px;
     background-color: var(--foreground);
     padding: 20px 20px;
-    border-radius: 80px;
+    border-radius: 40px;
     color: var(--card-foreground);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     width:25%;
@@ -94,10 +82,22 @@ button-right {
     margin: 40px;
     background-color: var(--foreground);
     padding: 20px 20px;
-    border-radius: 80px;
+    border-radius: 40px;
     color: var(--card-foreground);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     width:25%;
+}
+button-mode {
+    text-align:center;
+    vertical-align:right;
+    margin: 40px;
+    background-color: var(--foreground);
+    padding: 20px 20px;
+    border-radius: 40px;
+    color: var(--card-foreground);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    width:25%;
+    background-image:url("Assets/1.jpg");
 }
 
 cite {
@@ -123,102 +123,112 @@ footer div {
     display: block;
 }
 
-.href {
-    font-size: 200%;
-
-}
-
 header {
         padding: 20px;
         font-size: 100%;
         display:flex;
-        background-color: var(--background);
+        background-color: transparent;
         align-items: center;
     
 }
 
 
-h1{
-    font-size: 110%;
-    margin: 20px 0;
-    color: var(--card-foreground);
-    align-items: center;
+header div{
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    display:inline-flex;
 }
-h1-2{
-        font-size: 110%;
-        color: var(--card-foreground);
-        align-items: center;
-        font-weight: 900;
-        display:inline-block;
-        margin: 4%;
-        margin-top: 0;
+
+
+h1{
+    font-size: 75px;
+    margin: 20px 0;
+    color: var(--card-foreground)
 }
 h2{
-    font-size: 75%;
+    font-size: 55px;
     line-break: 8%;
     margin: 20px 0;
     color: var(--card-foreground)
 }
 h3{
-    font-size: 60%;
+    font-size: 35px;
     line-break: 8%;
-    margin: 0.5%;
-    color: var(--card-foreground);
-    display: inline-block;
-    align-items: center;
+    margin: 20px 0;
+    color: var(--card-foreground)
 }
 h4 {
-    font-size: 45%;
+    font-size: 25px;
     line-break: 8%;
     margin: 20px 0;
     color: var(--card-foreground);
-    align-items: center;
 }
 h5 {
-    font-size: 30%;
+    font-size: 15px;
     line-break: 8%;
     margin: 20px 0;
     color: var(--card-foreground);
 }
 
-img{
+image{
     border-style: none;
-    max-block-size: 50%;
-    display: grid;
-    margin: auto;
-}
 
-.img-2{
-    border-style: none;
-    max-block-size: 50%;
-    display:grid;
-    margin: auto;
-    
-    
-}
 
+}
 main {
-    display:grid;
+    display:flex;
+    grid-template-columns: 3fr;
+    grid-template-rows: 3fr; 
     width: 100%; 
     gap: 1rem; /* Optional, adds space between rows/columns */
-    overflow-y:hidden; /* Enable scrolling for content */
-    scroll-behavior:auto; /* Enable smooth scrolling */
-    grid-template-columns:auto;
-    background-color: transparent;
+    overflow-y:visible; /* Enable scrolling for content */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
-main-about {
-    display:grid;
-    width: 100%; 
-    gap: 1rem; /* Optional, adds space between rows/columns */
-    overflow-y:clip;
-    grid-template-columns:auto;
-    background-color: transparent;
+f
+
+sub {
+    bottom:-0.25em;
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline
 }
 
 
 p {
     margin:flex;
     line-height: 1;
-    display: block;
-    font-size: 45%;
+}
+
+.highlight {
+    color: var(--foreground);
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+    background-color: var(--background);
+    color: var(--card-foreground);
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    
+}
+
+.image-container {
+    display: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img-quarter {
+    float:left;
+    width:100%;
+    padding:0 8px
+}
+.row{
+    content:"";
+    display:table;
+    clear:both;
 }
